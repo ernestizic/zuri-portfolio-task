@@ -188,38 +188,35 @@ form .name{
 }
 
 
-
-/* -------------- Phones (Galaxy S3) --------------- */
-
-/* Portrait and Landscape */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-    header {
-      background-color: #000000;
-      padding: 15px 40px;
-    }
-    .about {
-      flex-direction: column-reverse;
-    }
-    .about .about-picture {
-      padding: 20px 0;
-    }
-    .contact .contact-me {
-      flex-direction: column;
-    }
-    .contact-form{
-      width: 100%;
-    }
-    .contact-info{
-      display: none;
-    }
-    .recent-works .works{
-      display: flex;
-      flex-direction: column;
-    }
-
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  header {
+    background-color: #000000;
+    padding: 15px 40px;
   }
-
+  .about {
+    flex-direction: column-reverse;
+  }
+  .about .about-picture {
+    padding: 20px 0;
+  }
+  .contact .contact-me {
+    flex-direction: column;
+  }
+  .contact-form{
+    width: 100%;
+  }
+  .content{
+    padding: 0;
+  }
+  .contact-info{
+    width: 100%;
+    margin: 0;
+    padding-top: 50px;
+    text-align: left;
+  }
+  .recent-works .works{
+    display: flex;
+    flex-direction: column;
+  }
+}
